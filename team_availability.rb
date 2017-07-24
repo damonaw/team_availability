@@ -22,7 +22,7 @@ class Day
   end
 
   ##
-  # Prints out an array of half hour blocks that the whole team in available.
+  # Prints out an array of half-hour blocks that the whole team in available.
   def team_availability( appointments )
     return unless appointments.is_a? Array
     # Add lunch to the list of appointments, remove duplicate appointments.
@@ -60,7 +60,7 @@ class Day
   end
 
   ##
-  # Builds an array of all the half hour blocks between time_start and time_stop.
+  # Builds an array of all the half-hour blocks between time_start and time_stop.
   # @return Array
   def half_hour_blocks( time_start, time_end )
     time_start = am_pm( time_start )
@@ -69,7 +69,7 @@ class Day
     time_start = Time.parse( time_start )
     time_end   = Time.parse( time_end )
     blocks = []
-    # Make a 2d array representing the each half hour segment.
+    # Make a 2d array representing the each half-hour segment.
     begin
       block = []
       block.push( time_start.strftime( '%l:%M' ).lstrip )
