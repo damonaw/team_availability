@@ -1,2 +1,3 @@
 # team_availability
-Shows a teams availability for meetings.
+- Code Challenge for TruHearing.
+- Shows a teams availability for meetings.
